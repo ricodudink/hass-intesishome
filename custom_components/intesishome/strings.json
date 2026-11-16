@@ -1,0 +1,78 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "device": "Device type"
+        },
+        "title": "Select the type of Intesis device to add"
+      },
+      "details": {
+        "data": {
+          "device": "Device type",
+          "host": "Hostname/IP address of the device",
+          "password": "[%key:common::config_flow::data::password%]",
+          "username": "[%key:common::config_flow::data::username%]"
+        },
+        "title": "Connect to your IntesisHome account"
+      },
+      "reauth_confirm": {
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]",
+          "username": "[%key:common::config_flow::data::username%]"
+        },
+        "title": "Reauthenticate with IntesisHome",
+        "description": "Your IntesisHome credentials are no longer valid. Please re-enter them to reconnect."
+      }
+    },
+    "error": {
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "no_devices": "There are no devices linked to this account.",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "outdoor_temperature": {
+        "name": "Outdoor temperature"
+      },
+      "run_hours": {
+        "name": "Run hours"
+      },
+      "error_code": {
+        "name": "Error code"
+      },
+      "rssi": {
+        "name": "Signal strength"
+      },
+      "filter_due_hours": {
+        "name": "Filter due hours"
+      }
+    },
+    "binary_sensor": {
+      "problem": {
+        "name": "Problem"
+      },
+      "connectivity": {
+        "name": "Connectivity"
+      },
+      "filter_clean": {
+        "name": "Filter clean required"
+      }
+    },
+    "button": {
+      "reset_filter": {
+        "name": "Reset filter"
+      }
+    },
+    "switch": {
+      "remote_controller_lock": {
+        "name": "Remote controller lock"
+      }
+    }
+  }
+}

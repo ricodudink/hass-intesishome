@@ -1,0 +1,78 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "The following account has already been configured."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "device": "Device type"
+        },
+        "title": "Select the type of Intesis device to add"
+      },
+      "details": {
+        "data": {
+          "host": "Device IP address",
+          "device": "Device type",
+          "password": "Password",
+          "username": "Username"
+        },
+        "title": "Connect to your Intesis device"
+      },
+      "reauth_confirm": {
+        "data": {
+          "password": "Password",
+          "username": "Username"
+        },
+        "title": "Reauthenticate with IntesisHome",
+        "description": "Your IntesisHome credentials are no longer valid. Please re-enter them to reconnect."
+      }
+    },
+    "error": {
+      "unknown": "An unknown error occurred.",
+      "no_devices": "There are no devices linked to this account.",
+      "invalid_auth": "Invalid username or password.",
+      "cannot_connect": "An error occurred connecting to the IntesisHome API."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "outdoor_temperature": {
+        "name": "Outdoor temperature"
+      },
+      "run_hours": {
+        "name": "Run hours"
+      },
+      "error_code": {
+        "name": "Error code"
+      },
+      "rssi": {
+        "name": "Signal strength"
+      },
+      "filter_due_hours": {
+        "name": "Filter due hours"
+      }
+    },
+    "binary_sensor": {
+      "problem": {
+        "name": "Problem"
+      },
+      "connectivity": {
+        "name": "Connectivity"
+      },
+      "filter_clean": {
+        "name": "Filter clean required"
+      }
+    },
+    "button": {
+      "reset_filter": {
+        "name": "Reset filter"
+      }
+    },
+    "switch": {
+      "remote_controller_lock": {
+        "name": "Remote controller lock"
+      }
+    }
+  }
+}
